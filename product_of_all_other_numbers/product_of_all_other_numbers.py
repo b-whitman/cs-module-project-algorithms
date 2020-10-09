@@ -2,10 +2,25 @@
 Input: a List of integers
 Returns: a List of integers
 '''
-def product_of_all_other_numbers(arr):
-    # Your code here
 
-    pass
+import math
+
+def product_of_all_other_numbers(arr):
+    products = []
+    
+    # TODO: Create a loop that removes numbers one at a time and products 
+    # remaining numbers into new list
+
+    # Initial solution using nested for loops and division
+
+    product = 1
+    for n in arr:
+        product = product * n
+
+    for i,x in enumerate(arr):
+        products.append(product/x)
+
+    return products
 
 
 if __name__ == '__main__':
