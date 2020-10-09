@@ -17,6 +17,8 @@ def single_number(arr):
         else:
             return arr[i]
     
+    # Original Solution
+
     # for i in range(len(arr))[::2]:
     #     if arr[i] == arr[-1]:
     #         return arr[i]
